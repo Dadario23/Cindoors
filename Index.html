@@ -1,1 +1,29 @@
-
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+</head>
+<body>
+<div id="contenedor">
+    <button id="btn">Tirar Moneda</button>
+    <img src="" alt="" id= "image">
+    <h1 id="txt"></h1>
+</div>
+<!--El codigo JS va antes del cierre de </body> -->
+    <script>
+        var boton =  document.getElementById("btn");
+        var imagen = document.getElementById("image");
+        var txt = document.getElementById("txt");
+        //numero random
+        
+        
+        boton.addEventListener('click',()=>{
+            var numeroRandom = Math.round(Math.random() * (10 - 1)+ 1);
+            txt.innerHTML = "El numero que salio es " + numeroRandom
+        })
+    </script>
+</body>
+</html>
